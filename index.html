@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- Дополнительные мета теги -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="robots" content="none">
+	<link rel="stylesheet" href="./css/main.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<span class="cube cube-1" style="--i:-1s; --degs:335deg"></span>
+		<span class="cube cube-2" style="--i:-2.5s; --degs:35deg"></span>
+		<span class="cube cube-3" style="--i:0s; --degs:20deg"></span>
+		<span class="cube cube-4" style="--i:-4s; --degs:330deg"></span>
+		<span class="cube cube-5" style="--i:-3s; --degs:335deg"></span>
+		<div class="container">
+			<form class="form" id="formApi">
+				<div class="input__container">
+					<input class="input" id="input" placeholder="Search at giphy" autocomplete="off" required type="text">
+					<div class="err__message" id="errMessage">Type something</div>
+					<button class="btn btn__submit" id="btnSubmit"><img id="icon" src="./img/icons8-search-24-blue.png"/></button>
+				</div>
+			</form>
+			<div class="lists" id="listsContainer">
+				<div class="lists__body">
+					<div class="lists__item">
+						<a class="lists__link">
+							<img class="lists__gif" src="https://media2.giphy.com/media/ri3hFO1ERrbRakGn0P/200w.gif?cid=ecf05e47iksd0xweknb2rulptrpharestb17sz4grkzo4ir5&rid=200w.gif&ct=g" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="pagination__container" id="pagination">
+			</div>
+		</div>
+	</div>
+
+	<script src="./js/main.js"></script>
+</body>
+
+</html>
